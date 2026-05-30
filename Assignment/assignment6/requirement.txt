@@ -1,0 +1,99 @@
+Conduct a Heuristic Evaluation
+Due Sunday by 11:59pm Points 100 Available after May 11 at 6pm
+Assignment Overview
+Release Date: May 11, 2026 by 6pm
+Due Date: May 31, 2026, by 11:59pm
+Points: 100
+Submitting: workbook and video URLs to a Google Form
+Your Task: In this assignment, you will conduct a heuristic evaluation of an interactive system of your choice and communicate your findings in two parts: (1) a completed evaluation workbook and (2) a 5–7 minute video essay. Submissions will be made to a Google Form instead of to Canvas.
+
+Learning Goals: By the end of this assignment, you will have gained experience with:
+
+conducting a heuristic evaluation of the usability of an interactive system
+analyzing, synthesizing and prioritizing the results of a usability evaluation
+communicating the results of a UX evaluation in a video essay
+Conduct the Heuristic Evaluation
+First, if you have not already, complete the week 7 readings and familiarize yourself with Nielsen's 10 usability heuristics.
+
+
+week 7 Readings/Videos
+
+Baxter_Understanding_Users_c14_Evaluation_Methods
+ from Understanding Your Users; A Practical Guide to User Research Methods by Baxter, Courage & Caine (full book available through UCI Libraries)
+How to Conduct a Heuristic EvaluationLinks to an external site. https://www.nngroup.com/articles/how-to-conduct-a-heuristic-evaluation/
+10 Usability Heuristics for User Interface DesignLinks to an external site. https://www.nngroup.com/articles/ten-usability-heuristics/
+Also watch the 11 short videos (2-3 minutes each) about the individual heuristics
+Kumar_Four_types_consistency
+
+
+You will need to choose an interactive system to evaluate. An example “interactive system” may be a web application, a mobile phone app, a game, or simply an interactive device (e.g., a radio, microwave, smart speaker, car, etc.). You have a lot of flexibility, but be strategic. Choose a system which lends itself to usability analysis. It should be a system with which you have personal experience. Also, choose a system for which you can provide a live demo or other visual aids (e.g., screen captures, photos, and/or other audio-visual representations of the interaction).
+
+Conduct a heuristic evaluation of the site using the Nielsen Norman Group's heuristic evaluation workbook Heuristic_Evaluation_Workbook_1_Fillable
+
+Communicate Your Results
+You will submit both your completed heuristic evaluation workbook and a pre-recorded presentation / video essay.
+
+You should identify the top 4 usability heuristics from your workbook to present in your video. Then, record a 5-7 minute video essay to present an analysis of the usability of the interface with respect to the four heuristics you have chosen.
+
+Video Content
+Though we will not collect them, it is highly recommended that you create a set of slides to provide supporting visual content for your video. An easy way to produce the video recording is to open a Zoom meeting, share your screen, and record the meeting as you present the slides.
+
+Good submissions will provide an introduction with a brief description of the system and summary of the video essay intent. The body of the video essay should consist of analysis organized by the four heuristics you chose, with separate slides/visuals for each. For each heuristic, define the principle and provide a reference to an authoritative source for the definition. Then, describe how the system adheres to or departs from that principle. Your video essay should make use of live demo, screenshots with markup, or other supporting audio/video/illustration to informatively and persuasively communicate your points. End with a summative conclusion.
+
+The full submission should be no fewer than 5 minutes and no longer than 7 minutes. Please do not speed up or slow down the audio to meet the time constraints. Citations and references are required and can be in any format (e.g., APA, Harvard, ACM, etc.), as long as you choose one and stick with it. The citations in the middle of your video should be more succinct (e.g., (Branham et al., 2021)), and a complete reference list should appear at the end of your video or in the video description. Submissions should use a professional technical video (access using UCI VPN) style (a cousin of "technical writing"); your submission should be in the informative, educational genre (see Table 1). It may help to follow the basic steps of this beginner's guide to creating a video essay.
+
+You may benefit from watching an example of an excellent video essayLinks to an external site. https://www.youtube.com/watch?v=bT0UP82F-yc submitted in a previous year (for a similar but slightly different assignment—be careful to follow guidelines specified in the current assignment description). The submission was accurate, well-organized, visually effective, entertaining, and accessible. The rubric by which you will be assessed is detailed; we recommend you read it multiple times during the preparation of your submission.
+
+Please make your submission is professional and suited to a workplace environment. However, we also encourage you to leverage your creativity and sense of humor. We learn and teach better when we bring our whole selves to our work; your graders and classmates will appreciate submissions that are uniquely "you." 
+
+Generative AI and Other Tools
+You may use generative AI sparingly if you wish for:
+
+Refining the script or visual presentation in your video essay.
+Producing visual content (images, screenshots, drawings, etc.) for your video essay.
+If you use generative AI, you must include a notice in your video essay (generally in the first or last slide) explaining how you used it.
+
+Submission
+You are being asked to submit two things:
+
+a link to your completed heuristic evaluation workbook on Google drive
+a link to your video on YouTube or Google drive
+Instead of submitting via Canvas, you will submit via this Google Form; this makes grading substantially easier and allows us to ask you a few additional questions to improve the quality of your submission.
+
+You will submit URL links for both the workbook and the video. Upload the workbook to your Google drive. You can upload the video to your Google drive (with appropriate sharing settings) or to YouTube as "unlisted" (this ensures the instructional team can access it, but no one else will see it unless you share the link). You may receive a grade of 0 if we cannot access the files.
+
+Please ensure that you give edit access to Matt (mbietz@uci.edu) and Yi-Hung (yihungc1@uci.edu) for your workbook. Further, please ensure that we can access your video. Without these permissions, your assignment cannot be graded, so please do not forget this important step.
+
+Tips for Creating Effective Visual Aids
+In UX design, visual representations are a critical form of communication and about design. However, using visuals to make a persuasive argument is not as straight forward as you might assume; it is a skill that requires development. Below are some tips that can help you earn top points on your submission's visual aids presentation.
+
+Use your words. Do not expect a screenshot or photo to speak for itself. A phrase like, "as can be seen in the screenshot..." is meaningless (and inaccessible) without additional details. For example, in a live demo or using a screenshot of a Canvas page, you might say, "the blue navigation pane along the left displays several icons which link to various features, including the Dashboard, Courses, and a Calendar." In a live demo, you should additionally narrate my actions and system responses, like this: "If I click on Courses, you see a submenu slides out from the left."
+Use annotations and zoom in. Circles, arrows, highlights, and text can all be added to your slide to indicate where readers should look. When important details of your visuals are too small to read without digital zoom, you need to magnify all or part of the image. Here's a great article with examples of how to present informative screenshots using annotations and zoom. Remember that annotations need to be verbalized in your video presentation.
+Create a drawing. Sometimes a photograph or screenshot has too much distracting detail. A simple drawing can abstract away the unimportant features and highlight those you are interested in. For example, a "wireframe" sketch is a way to show the content areas of a webpage without filling in all the content (here are some examples).
+Rubric
+Conduct a Heuristic Evaluation
+Conduct a Heuristic Evaluation
+Criteria	Ratings	Pts
+This criterion is linked to a Learning OutcomeHeuristic Evaluation Workbook
+For each of the 10 heuristics:
+• Issues: clear, reasonable explanation of how the system adheres to or violates the heuristic, supported by examples (3 pts)
+• Recommendations: well-reasoned recommendation(s), where applicable (2 pts)
+50 pts
+This criterion is linked to a Learning OutcomeVideo Essay: Overall Presentation
+• Video is 5–7 minutes long
+• Citations and references included (in-video + end or video description)
+• Clear and audible narration or accurate, complete captions/subtitles
+• Presentation is professional and easy to follow
+5 pts
+This criterion is linked to a Learning OutcomeVideo Essay: Introduction & Conclusion
+• Brief description of the system
+• Concise summary of the video essay intent/what the video will cover
+• Summative conclusion of the evaluation result
+5 pts
+This criterion is linked to a Learning OutcomeVideo Essay: Heuristic Presentation
+For each of the 4 heuristics (10 pts each):
+• Definition of the heuristic
+• Clear articulation of how the system meets or fails to meet the heuristic
+• Effective visual/auditory communication: use of annotated screenshots, live demo, zoom-ins, illustrations, etc. to informatively and persuasively communicate your points
+40 pts
+Total Points: 100

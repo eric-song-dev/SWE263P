@@ -1,0 +1,90 @@
+HTML Accessibility
+Due Sunday by 11:59pm Points 100 Submitting a file upload Available after May 4 at 6pm
+Assignment Overview
+Release Date: May 4, 2026 by 6pm
+Due Due: May 17, 2026 by 11:59pm
+Points: 100
+Submitting: file uploads
+Your Task: rewrite an inaccessible HTML page to be more accessible
+
+Learning Goals: By the end of this assignment, you will have gained experience with:
+
+using the WCAG guidelines and accessibility tools to identify accessibility issues in an HTML page
+rewriting HTML code to address accessibility issues
+Deliverable: home.html file and an issue list document
+
+Instructions
+To begin, download the starter code zip file (263PAccessibilityAssignment.zip) Download starter code folder (263PAccessibilityAssignment). Unzip the file. You should see home.html and a folder called img at the top level. The img folder contains 31 image files. You should use whatever text editor or IDE you prefer to work with the home.html file.
+Run home.html in your browser. You should see a page that looks like this:
+Home Page Screenshot
+Identify all WCAG 2.2 Level A and Level AA accessibility issues (https://webaim.org/standards/wcag/checklist) on home.html. An accessibility audit tool / validator like WAVE (https://wave.webaim.org/) may help identify some issues.
+Rewrite the home.html file to fix the accessibility issues you identify. This should be a substantial but relatively straightforward rewrite of the page. You should focus on changes to HTML and CSS. You should not need to use much (if any) javascript. Your HTML will likely be simpler and shorter after the rewrite than before. Do not modify any of the images. Do not worry about making the page fully responsive or mobile-friendly.
+Create a brief document that lists each accessibility issue you identified and how you addressed that issue.
+Submit your home.html file, issue list document, and any other changed files to complete this assignment. Do not submit a zip file. Do not submit the image files.
+Grading
+See the rubric for details, including extra credit (EC) opportunities.
+
+You must fix all Level A and Level AA issues from WCAG version 2.2. While you may refer to the full WCAG specification (https://www.w3.org/TR/WCAG22/) for additional detail, WebAIM's WCAG2 Checklist (https://webaim.org/standards/wcag/checklist) should be sufficient.
+
+Grading will use the WAVE accessibility tool (https://wave.webaim.org/) to validate your code, and we suggest you do the same. However, be aware that WAVE is not sufficient without your own input and analysis. WAVE can identify common errors, but it will not identify every kind of problem. Be sure to work your way through the entire checklist.
+
+Also be careful about the meaning of the icons in WAVE. Red "errors" are items that WAVE is sure are wrong. Amber "alerts" are potential issues that require human analysis to determine if they are actually a problem. Green "features" are items that would be helpful, but a human analysis is required to determine if they are implemented correctly. You can view the Introduction to WAVE (https://www.youtube.com/watch?v=ITUDiTgAZY0) for more details.
+
+You may see the terms "WAI-ARIA" or just "ARIA" in the WCAG specifications and in the WAVE tool. WAI-ARIA (https://www.w3.org/WAI/standards-guidelines/aria/) is an advanced specification that is designed to help increase the accessibility of dynamic content and highly interactive web applications. You do not need to use ARIA for this assignment.
+
+Advice
+For this assignment, you should try to keep the visual layout of the page as close as possible to the original. However, grading will focus on accessibility issues, not the finer points of HTML coding and CSS layout. Do not spend your time worrying about pixel-level perfection.
+
+The issues you will be fixing will be the typical level required to ensure legal compliance. In the language of the WCAG 2 standards, you should be aiming for "Level AA" compliance.
+
+You may work in 2-person or 3-person groups to analyze the accessibility issues in the page. However, you should each independently fix the issues in the code and write your own issue list document.
+
+If you have questions, please ask them in Ed Discussion or come to drop-in hours with Matt or Yi-Hung.
+
+Resources
+How to Do an Accessibility Review (https://web.dev/articles/how-to-review)
+Web Content Accessibility Guidelines (WCAG) (https://www.w3.org/WAI/standards-guidelines/wcag/)
+WAVE Web Accessibility Evaluation Tool (https://wave.webaim.org/) (and browser plugins)
+Other accessibility testing tools (QA Lead) (https://thectoclub.com/tools/best-web-accessibility-testing-tools/)
+Another list of accessibility testing tools (UsabilityGeek) (https://usabilitygeek.com/10-free-web-based-web-site-accessibility-evaluation-tools/)
+ 
+
+Rubric
+HTML Accessibility Assignment
+HTML Accessibility Assignment
+Criteria	Ratings	Pts
+This criterion is linked to a Learning OutcomeMeets Basic Assignment Requirements
+30 pts
+This criterion is linked to a Learning OutcomeFix table-based layout
+10 pts
+This criterion is linked to a Learning OutcomeAdd Headings
+3 pts
+This criterion is linked to a Learning OutcomeUse Semantic Styling
+2 pts
+This criterion is linked to a Learning OutcomeAdd region tags
+2 pts
+This criterion is linked to a Learning OutcomeAdd alt text
+8 pts
+This criterion is linked to a Learning OutcomeFix contrast problems
+2 pts
+This criterion is linked to a Learning OutcomeEnsure keyboard access
+4 pts
+This criterion is linked to a Learning OutcomeMake link purpose clear
+2 pts
+This criterion is linked to a Learning OutcomeSpecify page language
+5 pts
+This criterion is linked to a Learning OutcomeAdd label to Select element
+2 pts
+This criterion is linked to a Learning OutcomeSensible reading order
+5 pts
+This criterion is linked to a Learning OutcomeChangelog
+25 pts
+This criterion is linked to a Learning OutcomeEC: Format lists correctly
+4 pts
+This criterion is linked to a Learning OutcomeEC: Make links visually distinct
+2 pts
+This criterion is linked to a Learning OutcomeEC: Provide skip links
+2 pts
+This criterion is linked to a Learning OutcomeEC: Replace image text with actual text
+2 pts
+Total Points: 110

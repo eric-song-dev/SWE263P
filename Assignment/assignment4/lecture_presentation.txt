@@ -1,0 +1,46 @@
+Reference:
+https://uxmovement.com/wireframes/4-things-no-one-told-me-about-high-fidelity-wireframes/
+https://uxplanet.org/lo-fi-vs-hi-fi-wireframes-and-the-importance-of-designing-the-flow-9b283ae62982
+https://usabilitygeek.com/smart-ux-high-fidelity-wireframes/
+
+Here is a summary of the provided lecture presentation:
+
+### **Overview**
+[cite_start]The document is a lecture presentation titled "Visual Design & Prototyping" for the course SWE 263P (Week 5), instructed by Matthew Bietz[cite: 1, 2, 3]. It focuses on how human perception rules can be applied to design to create effective visual hierarchies and explores the spectrum of wireframing fidelity. 
+
+---
+
+### **1. Gestalt Principles**
+[cite_start]Human perception is naturally tuned to find connections and groupings, and visual perception operates according to regular rules[cite: 56, 57, 58]. [cite_start]The lecture outlines several Gestalt principles (meaning "the whole is greater than the sum of its parts") that dictate how the mind organizes visual data[cite: 65, 66]:
+* **Proximity**: Things that are closer together are perceived as a group. [cite_start]Conceptually related items should be placed closer to each other[cite: 75, 76, 77].
+* [cite_start]**Similarity**: Elements that share visual characteristics (like type or color) are perceived as a group[cite: 88, 89, 96].
+* [cite_start]**Closure**: The mind perceives disconnected elements as creating whole shapes, which is especially useful for designing logos and icons[cite: 106, 107, 109, 110].
+* [cite_start]**Continuity**: Lines that continue in the same direction or follow good alignment are perceived as a cohesive whole[cite: 136, 137, 143].
+* [cite_start]**Symmetry**: Symmetrical elements are perceived as related, suggesting balance and stability[cite: 184, 185, 188].
+* [cite_start]**Figure-Ground**: Humans instinctively perceive objects to be in the foreground (more important elements) or the background[cite: 212, 213, 214, 215].
+
+---
+
+### **2. Visual Hierarchy Indicators**
+[cite_start]Visual hierarchy uses visual cues to communicate a hierarchical conceptual structure[cite: 53]. [cite_start]The presentation breaks these indicators down into two main categories[cite: 236]:
+* **Position**:
+    * [cite_start]*Proximity to Frame*: Items near the center generally carry more importance than those near the edges[cite: 251, 252].
+    * [cite_start]*Placement & Proximity*: Related items are placed closer together, using whitespace to separate conceptual groupings[cite: 274, 275].
+    * [cite_start]*Eye Behavior*: In Western contexts, objects nearer the top and to the left are perceived as more important[cite: 319, 320].
+    * [cite_start]*Nesting*: Related objects or things at the same hierarchical level are grouped within the same container[cite: 325, 326, 363, 364].
+    * [cite_start]*Overlap*: Objects placed on top or in front of others are viewed as more important or urgent[cite: 392, 393, 394].
+* [cite_start]**Treatment**: Hierarchy can also be established using **Size** (different font sizes), **Color** (higher-saturation colors stand out), **Ornament** (adding visual flourishes), and **Finish** (adding visual interest)[cite: 428, 430, 436, 437, 457, 458, 466, 467].
+
+---
+
+### **3. Prototyping and Wireframing Fidelity**
+[cite_start]The lecture covers the spectrum of prototyping, ranging from low to high fidelity[cite: 561].
+* [cite_start]**Low-Fidelity (Low-Fi)**: Consists of non-operational, paper-based sketches[cite: 570, 571, 572].
+* [cite_start]**Medium to High-Fidelity (High-Fi)**: Ranges from patched-up digital wireframes to highly functional prototypes[cite: 573, 579, 611]. 
+    * [cite_start]*Pros of High-Fi*: Allows for testing complex user interactions, spotting strengths/weaknesses, and clearer communication with engineers and investors[cite: 630, 633, 636, 638].
+    * [cite_start]*Cons of High-Fi*: It is time-intensive, costly, and can distract designers by making them focus on colors and shapes rather than basic functionality and layout[cite: 639, 640, 645].
+
+---
+
+### **4. Class Activities & Assignments**
+[cite_start]Throughout the lecture, students are prompted to complete Figma-based activities, such as applying Gestalt principles to a poster, practicing visual alignment, and reverse-engineering a mobile app screenshot into medium and high-fidelity wireframes[cite: 498, 542, 682, 684, 697]. [cite_start]The upcoming assignment requires students to create wireframes and high-fidelity mockups for a "UXAirways" mobile app[cite: 713, 715].

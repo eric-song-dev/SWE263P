@@ -1,0 +1,92 @@
+UXAirways Mobile App Design
+Due Sunday by 11:59pm Points 100 Submitting a website url Available after Apr 27 at 6pm
+Assignment Overview
+Release Date: Apr 27, 2026 by 6pm
+Due Due: May 10, 2026 by 11:59pm
+Points: 100
+Submitting: a website url
+Generative AI: GenAI use is not allowed for wireframing, laying out your mockup, or creating your interactive prototypes. You may use generative AI to create component graphics for your high-fidelity mockup if you wish.
+Your Task: develop a design concept for the UXAirways mobile app from wireframe through interactive Figma prototype
+
+Learning Goals: By the end of this assignment, you will have gained experience with:
+
+envisioning user experiences in specific contexts for a specific group of users
+developing a design concept using wireframes, mockups, and interactive prototypes
+documenting and communicating design concepts
+Deliverable: A link to a Figma file that contains
+
+Wireframes for your mobile app, and
+A high-fidelity, interactive mockup of the app
+Introduction
+Two weeks ago you developed a persona and journey map for the fictional UXAirways. In this assignment, you will develop the visual design for their mobile app. This will include creating a low- to medium-fidelity wireframe of the app, and a high-fidelity mockup/interactive Figma prototype.
+
+The goals of this assignment are to:
+
+demonstrate your understanding of UX principles (e.g. providing good signifiers and feedback), visual design principles (e.g. visual hierarchy),
+demonstrate your ability to communicate designs in both low-fidelity and high-fidelity genres, and
+demonstrate your ability to use a state-of-the-art design tool (Figma).
+While beauty is appreciated, we will not be grading the aesthetics of your design.
+
+Design Brief
+Your task is to come up with a design for the UXAirways mobile app. You should use the persona and journey map that you already created to help shape the design of your app.
+
+Your app must include at least 8 different pages/screens. You do not need to design all of the functionality of the app, or design all your features in depth. You can also include signifiers for features that are not yet developed. For example, your home page might have an icon to adjust app settings, even though you didn't design the settings page.
+
+Do not design a login page - you should assume the user is already logged in when they open your app.
+
+Your design must include:
+
+At least one multi-page user flow. For example, getting a flight status might include 3 pages after the Home Screen: Home Screen -> Search Flights -> Choose Flight -> View Status
+At least one scrollable list/page (horizontal or vertical)
+At least one pop-up or modal dialog box
+You are not required to include iPhone/Android standard information & interactions at the top and bottom of the screen, but you might find them helpful (e.g. having a "back" option can help your navigation). If you do include these, you should be sure to follow iOSLinks to an external site. or AndroidLinks to an external site. design standards.
+
+You will be developing this app in two versions:
+
+Wireframe: This version should indicate the basic layout and functionality without any of the "look and feel" aspects. Specifically:
+Use greeked textLinks to an external site. for any informational content (e.g. flight numbers, advertising text, descriptions, etc.)
+Use only black, white, and 1 shade of gray (at most). Do not use gradients.
+Use only basic shapes (e.g. rectangles and circles) without significant decorations
+Use simple B&W icons (if any)
+The wireframe does not need to be interactive (but can be if you want)
+High Fidelity Interactive Prototype
+This should show the exact same screens as your wireframe
+Layouts of screens should be basically the same
+Use color, styles, images, etc. to provide a sense of the look and feel of the app
+Replace greeked text with representative real text
+Use the Figma prototyping tools to allow the user to navigate your app, and use high-fidelity interactions (dragging, pop-ups, etc.) where appropriate
+Because your app must include 8 pages, and you must create 2 versions, your final deliverable will have a minimum of 16 pages. (Dialog boxes and similar pop-up content do not add to your page count.) Be sure your Figma file is arranged clearly.
+
+It's OK to use a Figma kit (with citation in your Figma file) to help with your wireframing and provide various placeholders, components, and icons. Be sure to use one that is not too fancy or complex—wireframes are meant to be graphically straightforward and simple. I often use Nailul Izah's Free Wireframes KitLinks to an external site. or Tiago Gonçalves' Wireframing Starter KitLinks to an external site..
+
+Additional Information
+You are free to use tutorials and examples from online sources (the Figma tutorial videos are quite good). I strongly advise you to check out other airline apps to see what kinds of functionality are typical (this is called "competitive analysis"). You may also use design kits like the Free Wireframes KitLinks to an external site. (with citation in your Figma file). However, plagiarizing your design from another source is not allowed. Your design must be your own.
+Generative AI use is not allowed for wireframing, laying out your mockup, or creating your interactive prototypes. You may use generative AI to create component graphics for your high-fidelity mockup if you wish, but you must indicate that you did so, and the overall design must be your own.
+Feel free to add annotations or comments to explain what you did and why.
+Submitting Your Assignment
+In your Figma Design File, click the "Share" button.
+Add mbietz@uci.edu and yihungc1@uci.edu as viewers to your file.
+Copy the sharing link and paste it here as your submission.
+Rubric
+UXAirways App Design
+UXAirways App Design
+Criteria	Ratings	Pts
+This criterion is linked to a Learning OutcomeMeets Assignment Requirements
+Are there 8 different pages/screens presented as both wireframes and interactive hi-fi mockups (16 pages total)? Is there at least 1 multi-page user flow? Is there at least one scrollable list or page, and at least one pop-up?
+50 pts
+This criterion is linked to a Learning OutcomeWireframe
+Is there a wireframe that follows the norms of wireframing, specifically: using placeholders for graphic content, using greeked text for information content, avoiding use of colors, only basic shapes, and simple icons? Is real text used for buttons, navigation menus, and similar labels? Is it clear from the wireframe what functionality will be available? Is it clear from the wireframe what kinds of content will be provided? In other words, does the wireframe communicate the functionality and layout of the app without the “look and feel” or stylistic attributes?
+15 pts
+This criterion is linked to a Learning OutcomeHigh-Fidelity Mockup
+Is there a clear correspondence between the wireframes and the high-fidelity mockups (e.g. same pages, same layout, etc.)? Have the placeholders and greeked text been replaced with realistic examples of images & text that will be in the interface? Have colors and styles been incorporated?
+10 pts
+This criterion is linked to a Learning OutcomeInteractivity
+Is the high-fidelity mockup also an interactive prototype? Are scrolling, pop-ups, and other interactive features well-used? Is navigation clear and comprehensive (e.g. providing links back to the main screen, etc.). Are any input fields or interaction widgets appropriately interactive?
+10 pts
+This criterion is linked to a Learning OutcomeUX Design
+Are basic principles of UX design followed and used well? This includes: Are there good signifiers? Does the interface provide good feedback or error messages if necessary? Is the layout and interaction paradigm consistent across the pages and in line with expected layouts? Does the visual hierarchy match the conceptual hierarchy?
+10 pts
+This criterion is linked to a Learning OutcomeTool Usage
+Has Figma been used well? Are app screens and other components logically arranged and easy to understand as presented? Have Figma’s prototyping and development tools been used appropriately (navigation, components, etc.)?
+5 pts
+Total Points: 100

@@ -1,0 +1,64 @@
+Persona & Journey Map
+Due Apr 20 by 11:59pm Points 100 Submitting a file upload Available after Apr 13 at 6pm
+Introduction
+Release Date: April 13, 2026 by 6pm
+Due Date: April 19, 2026 by 11:59pm
+Points:  100
+Submitting: a file upload
+File Types: PDF
+For this assignment, you will develop a persona and journey map for UXAirways, a fictional airline.
+
+Usually you would want your personas and journey maps to be based on extensive research with potential users. However, for this assignment, you will use a mix a your own experiences, what you can learn from written sources (new articles, web pages, etc.), competitive analysis (looking at other companies' products) to get started, and then use your own imagination (rooted in common sense and believability) to fill in the gaps.
+
+Design Scenario
+UXAirways is a growing all-business-class airline promising a boutique customer experience to frequent business travelers who demand the highest levels of service and satisfaction. UXAirways has decided to develop its own mobile app, and they are trying to decide what it should contain and what opportunities there are to provide their boutique experience in electronic form. The team has asked for two documents to help them understand the design possibilities for the app.
+
+First, the team would like a persona for a typical customer of the airline. Who is their customer, and what is it that they want from their airline and their technology? What do they care about?
+
+Second, the team would like a journey map that represents the customer's path from the moment they consider going on a trip through the point that everything having to do with the trip is completed. This includes not only booking the flight, but also services before, during, and after the flight. The goal here is not to present the user flow through the app, but instead to understand the "touchpoints" - those places in the customer's journey that they might use the app.
+
+Assignment Deliverable
+When developing your persona and journey map, you may use templates or examples you find online, but all of the content should be your own and in your own words.
+
+You should submit your persona and journey map as a PDF document.
+
+Tips & Tricks
+Many templates include information or sections that aren't relevant for this assignment (like marketing channels). Some also include things like sliders for personality scales or computer expertise that are basically meaningless (like this persona of Leonard GreyLinks to an external site.). Make sure the information you include is both relevant and meaningful.
+Think carefully about the "scale" of your journey map. Some journey maps focus on the interactions with/inside of an app. David Holden has created a journey map for an airline appLinks to an external site. that starts when the user gets to the app and ends when they have purchased their ticket. Holden's map is a different scale than what you should produce. His is kind of like what you would see if you zoomed in on one section of your map. Your map should not focus on what happens inside the interaction with an app, but instead on the larger process that starts with deciding to travel and ends when all aspects of the customer's interactions around this flight have finished.
+Try to imagine all of the parts of the experience for the businessperson, even if they don't directly involve the airline. For example, a business person may not be making their own travel arrangements, or they may need to get reimbursed after a flight.
+Other Resources
+When and How to Create Customer Journey MapsLinks to an external site. (includes a good format for journey maps)
+Personas Study GuideLinks to an external site.
+Personas and Journey Maps Download Personas and Journey Maps
+ from Agile UX Storytelling
+Putting Personas to Work in UX Design Download Putting Personas to Work in UX Design
+ by Nick Babich
+Rubric
+Persona and Journey Map
+Persona and Journey Map
+Criteria	Ratings	Pts
+This criterion is linked to a Learning OutcomePersona: Meets Assignment Requirements
+Is this a persona that represents an airline customer? Does it represent honest effort at a level appropriate for a graduate student?
+20 pts
+This criterion is linked to a Learning OutcomePersona: Character Development
+Does the persona present a rich and compelling character sketch of an appropriate user archetype? Does the persona give the viewer the sense that they know who this person is, especially in relation to the design brief?
+10 pts
+This criterion is linked to a Learning OutcomePersona: Useful and Relevant Content
+Does the persona give a sense of both the life and context of the user, as well as their skills, needs, goals, and other information relevant for the design brief? Are the categories of information appropriate for a UX persona? Is the information well-presented and understandable?
+10 pts
+This criterion is linked to a Learning OutcomePersona: Communication
+Does the persona communicate its content clearly and appropriately? Does it serve the needs of different members of the development team? Is it presented in a way that is easy to understand and pleasant to read? Is it engaging?
+10 pts
+This criterion is linked to a Learning OutcomeJourney Map: Meets Assignment Requirements
+Does the journey map cover the entire trip-related path (“from the moment they consider going on a trip through the point that everything having to do with the trip is completed”)?
+20 pts
+This criterion is linked to a Learning OutcomeJourney Map: Credibility
+Even though user research isn't required, the map should be believable and compelling. Does it represent a typical airline customer’s journey (and not edge cases or improbable events)?
+10 pts
+This criterion is linked to a Learning OutcomeJourney Map: Useful and Relevant Content
+Are the different phases of the journey clear and sensible? Are customer’s behaviors/actions, emotions, goals, and frustrations presented? Are touchpoints clear and well-determined?
+10 pts
+This criterion is linked to a Learning OutcomeJourney Map: Communication
+Does the journey map communicate its content clearly and appropriately? Does it serve the needs of different members of the development team? Is it presented in a way that is easy to understand and pleasant to read? Is it engaging?
+10 pts
+Total Points: 100

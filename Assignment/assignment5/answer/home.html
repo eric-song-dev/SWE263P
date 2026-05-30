@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Welcome to Matt's Mats</title>
+  <style>
+    :root {
+      --ink: #1a1a1a;
+      --ink-soft: #2f3a40;
+      --brand: #2d4a55;
+      --brand-bg: #d7d7cd;
+      --panel: #ededed;
+      --panel-dark: #e4e4e4;
+      --link: #11507a;
+      --link-visited: #5a2b87;
+      --focus: #b8430a;
+    }
+
+    *, *::before, *::after { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      padding: 24px 16px;
+      font: 16px/1.5 "Helvetica Neue", Arial, sans-serif;
+      color: var(--ink);
+      background: var(--brand-bg);
+    }
+
+    /* Skip link — visible on focus only (EC: Skip links) */
+    .skip-link {
+      position: absolute;
+      left: -10000px;
+      top: 8px;
+      background: var(--ink);
+      color: #fff;
+      padding: 8px 12px;
+      text-decoration: underline;
+      z-index: 100;
+    }
+    .skip-link:focus { left: 8px; }
+
+    .page {
+      max-width: 880px;
+      margin: 0 auto;
+      background: #fff;
+      border: 1px solid var(--ink-soft);
+      padding: 24px;
+    }
+
+    /* Visible focus indicator for all focusable elements */
+    a:focus-visible,
+    button:focus-visible,
+    select:focus-visible,
+    input:focus-visible {
+      outline: 3px solid var(--focus);
+      outline-offset: 2px;
+    }
+
+    /* Links visually distinct (EC) */
+    a { color: var(--link); text-underline-offset: 2px; }
+    a:visited { color: var(--link-visited); }
+    a:hover { text-decoration-thickness: 2px; }
+
+    /* HEADER */
+    .site-header {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 16px;
+      justify-content: space-between;
+      padding-bottom: 12px;
+      border-bottom: 2px solid var(--brand);
+    }
+    .site-header img { display: block; max-width: 100%; height: auto; }
+    .home-link { display: inline-block; }
+
+    .quicknav { display: flex; align-items: center; gap: 8px; }
+    .quicknav label { font-weight: 600; color: var(--ink); }
+    .quicknav select, .quicknav button {
+      font: inherit;
+      padding: 6px 10px;
+      border: 1px solid var(--ink-soft);
+      background: #fff;
+      color: var(--ink);
+    }
+    .quicknav button { background: var(--brand); color: #fff; cursor: pointer; }
+
+    /* Promo strip — semantic + readable contrast */
+    .promo {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px 24px;
+      justify-content: space-between;
+      background: var(--panel);
+      color: var(--ink);
+      padding: 8px 12px;
+      margin: 16px 0 0;
+      border-left: 4px solid var(--brand);
+    }
+
+    /* Main two-column layout via CSS grid (no layout tables) */
+    .layout {
+      display: grid;
+      grid-template-columns: 170px 1fr 170px;
+      gap: 20px;
+      margin-top: 16px;
+    }
+    @media (max-width: 720px) {
+      .layout { grid-template-columns: 1fr; }
+    }
+
+    /* Primary nav */
+    .primary-nav { background: var(--panel-dark); padding: 12px; }
+    .primary-nav ul { list-style: none; margin: 0; padding: 0; }
+    .primary-nav li + li { margin-top: 6px; }
+    .primary-nav a {
+      display: block;
+      padding: 10px 12px;
+      background: var(--panel);
+      color: var(--ink);
+      font-weight: 600;
+      text-decoration: none;
+      border: 1px solid transparent;
+    }
+    .primary-nav a:hover,
+    .primary-nav a:focus-visible { border-color: var(--ink-soft); text-decoration: underline; }
+    .primary-nav a[aria-current="page"] {
+      background: var(--brand);
+      color: #fff;
+    }
+
+    /* Main content */
+    main h1 {
+      margin: 0 0 8px;
+      color: var(--ink-soft);
+      font-family: Impact, "Arial Narrow Bold", sans-serif;
+      font-weight: normal;
+      font-size: 28px;
+    }
+    main h2 {
+      margin: 24px 0 12px;
+      color: var(--ink-soft);
+      font-family: Impact, "Arial Narrow Bold", sans-serif;
+      font-weight: normal;
+      font-size: 22px;
+    }
+
+    .categories {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 12px;
+    }
+    @media (max-width: 520px) {
+      .categories { grid-template-columns: 1fr; }
+    }
+    .categories li {
+      background: var(--panel);
+      padding: 8px;
+    }
+    .categories h3 {
+      margin: 0 0 6px;
+      font-size: 16px;
+    }
+    .categories h3 a { color: var(--ink); text-decoration: underline; }
+    .categories img {
+      display: block;
+      width: 100%;
+      height: 120px;
+      object-fit: cover;
+      margin-bottom: 6px;
+    }
+    .categories p { margin: 0 0 8px; font-size: 14px; }
+    .categories .more { font-size: 14px; }
+
+    .commit-list {
+      margin: 8px 0 16px;
+      padding-left: 20px;
+    }
+    .commit-list li { margin-bottom: 4px; }
+
+    .contact { margin-top: 8px; }
+    .contact strong { color: var(--ink); }
+
+    /* Aside (right column) */
+    .aside-panel { background: var(--panel-dark); }
+    .aside-panel + .aside-panel { margin-top: 16px; }
+    .aside-panel h2 {
+      margin: 0;
+      padding: 8px 12px;
+      background: var(--brand);
+      color: #fff;
+      font-size: 16px;
+      font-family: inherit;
+    }
+    .aside-panel img { display: block; width: 100%; height: auto; }
+    .aside-panel p { margin: 0; padding: 10px 12px; font-size: 14px; }
+    .aside-panel .more { display: inline-block; padding: 0 12px 12px; font-size: 14px; }
+
+  </style>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <div class="page">
+    <header class="site-header">
+      <a class="home-link" href="home.html" aria-label="Matt's Mats home">
+        <img src="./img/top_logo.gif" width="443" height="86" alt="Matt's Mats">
+      </a>
+
+      <form class="quicknav" action="#" method="get">
+        <label for="quicknav-select">Quick navigation</label>
+        <select id="quicknav-select" name="dest">
+          <option value="../doormats.html">Doormats</option>
+          <option value="../kitchen.html">Kitchen Mats</option>
+          <option value="../exercise.html">Exercise Mats</option>
+          <option value="../custom.html">Custom Mats</option>
+          <option value="../accessories.html">Accessories</option>
+          <option value="../faqs.html">FAQs</option>
+          <option value="../service.html">Customer Service</option>
+          <option value="../shipping.html">Shipping</option>
+          <option value="../about.html">About Us</option>
+          <option value="../returns.html">Returns</option>
+          <option value="../contact.html">Contact Us</option>
+        </select>
+        <button type="submit">Go</button>
+      </form>
+    </header>
+
+    <section class="promo" aria-label="Site promotions">
+      <p><strong>Save:</strong> 10% off your first order. Use code <em>10first</em></p>
+      <p><strong>New:</strong> Upload an image for custom mats</p>
+    </section>
+
+    <div class="layout">
+      <nav class="primary-nav" aria-label="Primary">
+        <ul>
+          <li><a href="home.html" aria-current="page">Home</a></li>
+          <li><a href="shop.html">Shop</a></li>
+          <li><a href="news.html">News</a></li>
+          <li><a href="survey.html">Survey</a></li>
+        </ul>
+      </nav>
+
+      <main id="main" tabindex="-1">
+        <h1>Welcome to Matt's Mats</h1>
+        <p>Matt's Mats is your home on the web for all your mat needs. All styles and colors, indoor and outdoor. Look down - it's us!</p>
+
+        <h2>Top Categories</h2>
+        <ul class="categories">
+          <li>
+            <h3><a href="doormats.html">Doormats</a></h3>
+            <img src="./img/doormat-sm.jpg" alt="A brown coir doormat at a front entry.">
+            <p>The best indoor and outdoor mats to welcome visitors to your home. Long-lasting colors won't fade in the sun.</p>
+            <a class="more" href="doormats.html">More about doormats</a>
+          </li>
+          <li>
+            <h3><a href="kitchen.html">Kitchen Mats</a></h3>
+            <img src="./img/kitchen-sm.jpg" alt="A padded kitchen mat in front of a stove.">
+            <p>Save your feet while cooking up your favorite dishes. Kitchen mats provide extra padding and comfort.</p>
+            <a class="more" href="kitchen.html">More about kitchen mats</a>
+          </li>
+          <li>
+            <h3><a href="exercise.html">Exercise Mats</a></h3>
+            <img src="./img/exercise-sm.jpg" alt="A blue yoga mat rolled out on a wood floor.">
+            <p>Get your fit on in comfort and style. Mats for yoga, gymnastics, weight rooms, and playgrounds.</p>
+            <a class="more" href="exercise.html">More about exercise mats</a>
+          </li>
+        </ul>
+
+        <h2>Our Environmental Commitment</h2>
+        <p>We are serious about protecting the environment. We use sustainable materials and zero-waste manufacturing. We also have a recycling program and we'll take all your old rugs, even if we didn't manufacture them!</p>
+        <ul class="commit-list">
+          <li><a href="../materials.html">Learn about our sustainable materials</a></li>
+          <li><a href="../manufacturing.html">Read about our manufacturing practices</a></li>
+          <li><a href="../recycling.html">Join our recycling program</a></li>
+        </ul>
+        <p class="contact"><strong>Got a question? Call us:</strong> <a href="tel:+18006288628">1&nbsp;(800)&nbsp;M-A-T-T-M-A-T</a></p>
+      </main>
+
+      <aside aria-label="Featured">
+        <section class="aside-panel">
+          <h2>Custom Doormats</h2>
+          <img src="./img/teaser_right1.jpg" width="150" height="106" alt="A custom doormat printed with a family name.">
+          <p>Use our design tool or upload your own image to create a custom doormat.</p>
+          <a class="more" href="custom.html">Read more about custom doormats</a>
+        </section>
+
+        <section class="aside-panel">
+          <h2>Mat of the Week</h2>
+          <img src="./img/teaser_right2.jpg" width="150" height="100" alt="Annie's custom welcome mat on a porch.">
+          <p>Annie from Anchorage sent us this snap of her new custom rug on her doorstep. We've got a whole gallery for inspiration.</p>
+          <a class="more" href="survey.html">See more customer photos</a>
+        </section>
+      </aside>
+    </div>
+
+    <footer class="site-footer"></footer>
+  </div>
+</body>
+</html>
