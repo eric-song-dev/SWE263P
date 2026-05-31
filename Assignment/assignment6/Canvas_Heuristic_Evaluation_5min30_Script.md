@@ -18,11 +18,7 @@ I used screenshots from UCI Canvas. In the workbook, I evaluated all ten heurist
 
 ## Slide 3 - System Overview
 
-Canvas is a hub for student work. It brings together courses, deadlines, announcements, grades, and calendar events.
-
-This is useful, but it also creates a challenge. Students often come in with one question: What is due soon? Did my grade change? Where is the assignment?
-
-Overall, Canvas is familiar and mostly easy to learn. The main issue is that important information is sometimes present, but not easy enough to notice.
+Canvas is a hub for student work. It brings together courses, deadlines, announcements, grades, and calendar events. Overall, it is familiar and mostly easy to learn, but important information is sometimes present without being easy enough to notice.
 
 ## Slide 4 - H1: Visibility of System Status
 
@@ -76,8 +72,6 @@ Third, show clear recovery steps. The search no-results page is a good example. 
 
 Fourth, add short contextual help near grades, hidden scores, calendar filters, and assignment status.
 
-These small changes can reduce scanning and uncertainty.
-
 ## Slide 9 - Conclusion
 
 To conclude, Canvas is powerful and mostly learnable. Students can usually find the main pages they need.
@@ -88,9 +82,7 @@ My overall finding is: Canvas works, but it should make status, meaning, and pri
 
 ## Slide 10 - References
 
-The main sources are Nielsen Norman Group's ten usability heuristics, Nielsen Norman Group's article on heuristic evaluation, the Baxter reading on evaluation methods, and the Kumar reading on consistency.
-
-The screenshots were captured from UCI Canvas on May 30, 2026.
+The main sources are Nielsen Norman Group, Baxter, Kumar, and Canvas screenshots. The full reference list is on this slide.
 
 AI was used only to help refine script wording and slide layout.
 
