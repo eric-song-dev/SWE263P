@@ -1,0 +1,130 @@
+Extra Credit: Info Viz with Vega-Lite
+Due Sunday by 11:59pm Points 100 Submitting a text entry box or a file upload Available after May 18 at 6:30pm
+Overview
+This is an optional Extra Credit assignment. If you choose to complete it, either (1) you will receive up to +5% (proportional to your score) on top of your overall course grade, or (2) the grade on this assignment will replace the grade of your lowest assignment grade earned this quarter. The instructors will automatically apply the credit option which will result in the greatest increase in your overall grade.
+
+Objective: Produce usable and informative visualizations using the Vega-Lite interactive graphics grammar.
+
+Procedure: You will write valid Vega-Lite specifications for 3 visualizations.
+
+Deliverable: 3 Vega-Lite visualization specifications and a description of improvements document
+
+Introduction
+For this assignment, you will produce 3 separate visualizations. By the end of this assignment, you should be able to:
+
+Understand the basic concepts that are common to most visualization grammars
+Use the Vega-Lite grammar to produce low- and medium-complexity interactive data visualizations, including (but not limited to):
+Create a Vega-Lite specifications object
+Load data from files and streams in different formats
+Transform data to produce appropriate formats and derived data points
+Configure various presentation parameters and formats
+Create interactive elements, including tooltips and data filtering
+Produce visualizations that are usable, informative, and truthful, including (but not limited to):
+Clearly communicate the data and its context
+Empowering the viewer to draw appropriate and accurate conclusions
+Avoid data distortions and inaccurate interpretations
+Support interactive data exploration
+Data visualizations are an important part of interface design. Whether you are designing a network monitoring dashboard or a personal health app or a scoreboard in a game, you're probably going to want to give some visual representation of data. Visualization grammars (like Vega-Lite) create a low-threshold but high-ceiling way to bring visualizations into your software. While not as powerful as some other grammars (D3, Vega, etc.), Vega-Lite is a good place to start and will introduce most of the basic principles common to most visualization grammars.
+
+Additionally, the UX of data visualization is an important factor in successful data communication. Bad visualizations are everywhere (Instructure, the maker of Canvas, is notorious for its sketchy data visualizations in its marketing, see hereLinks to an external site. and hereLinks to an external site.). There are a lot of great references on how to improve the UX of data visualizations, but one of my favorite compact references is from an online book about the R statistical programming language: Chapter 11: Data Visualization PrinciplesLinks to an external site. from Introduction to Data Science: Data Wrangling and Visualization with R by Rafael A. Irizarry. Even though the examples are coded in R, the principles are universal.
+
+Make good use of the Vega-Lite documentation(https://vega.github.io/vega-lite/docs/). Additionally, similar examples for all three visualizations are available in the Vega-Lite Example Gallery(https://vega.github.io/vega-lite/examples/). You will need to combine techniques from multiple examples to produce each of the visualizations for this assignment.
+
+Tools
+There are basically two options for developing your Vega-Lite visualizations. You can use the Vega-lite Online Editor(https://vega.github.io/editor/#/), which also has some good debugging tools built in. Or you can edit the code in your favorite IDE and embed it into an HTML file for display. These are same options outlined on the readme for the in-class exercise we did: Vega-lite Exploration of Bigfoot Sightings(https://github.com/mbietz/263vegademo/).
+
+Visualization Instructions
+You will produce code for 3 separate visualizations for this assignment.
+
+For Visualizations 1 & 2, the goal is to reproduce the sample visualization (and meet the specified requirements) using Vega-Lite. 
+
+Visualization 3 requires more critical analysis. You must identify the usability issues with the visualization and redesign it to better support the communication goal.
+
+Visualization 1: Hourly Weather Data
+Write a Vega-Lite specification that produces the model visualization (below) of the hourly weather forecast for Irvine, CA, from the National Weather Service API.
+
+Data source: Hourly Forecast Data(https://api.weather.gov/gridpoints/SGX/39,59/forecast/hourly)
+
+Requirements:
+
+Hourly temperature forecast for the next week is displayed as a bar chart with each hour in one bar
+X axis represents time, includes the entire time period in the returned data, and is labeled in 12-hour format, with just the hour and AM or PM
+Y axis represents temperature, and is limited to show an appropriate temperature range (e.g. 50-75 degrees)
+The day of the week is shown by the color of the bar, with an appropriate legend (OK to use Vega-Lite default colors)
+Appropriate text labels are provided, including the title, axis labels, and the legend
+Vega-Lite plot is 1000px wide by 600px tall
+Pointing (mouseover) at any bar will display a tooltip that includes the exact time and date and values for temperature, wind speed, probability of precipitation, and humidity.
+Model Visualization (you should try to match this):
+
+Visualization of 7-Day Hourly Forecast for Irvine, California
+
+ 
+
+Visualization 2: UFO Sightings Map
+Write a Vega-Lite specification that produces the model visualization (below) of an interactive map of UFO sightings using data from NUFORC.
+
+Data source: NUFORC UFO Sightings Data(https://raw.githubusercontent.com/mbietz/datasets/main/ufo-short.csv)
+
+Requirements:
+
+UFO sightings in the United States are displayed as points at the correct location on a map of the US. Non-US points are not shown.
+Visualization has an appropriate title.
+Only one decade's worth of data is displayed at any given time. The decade is chosen interactively using a slider. The current decade is shown on the slider and in the chart's subtitle.
+Vega-Lite plot is 1000px wide by 600px tall
+Colors are up to you, but points should be clearly visible against the map background.
+Pointing at any datapoint on the map (mouseover) displays a tooltip showing the city, date, shape, duration, and description of the event. It is OK to display the included data "as-is" - the provided data does not need to be cleaned.
+Model Visualization (you should try to match this):
+
+Map of US UFO Sightings by decade
+
+Visualization 3: Census Race Data
+Write a Vega-Lite specification that improves the User Experience for the model visualization (below).
+
+Data source: Census Race Data(https://raw.githubusercontent.com/mbietz/datasets/main/census_race.csv)
+
+Requirements:
+
+The goal of the visualization is to allow to the viewer to understand and compare the percentage breakdown of racial categories for California from the 2010 and 2020 census. Example questions a viewer might ask of this visualization include:
+What percentage of the population in [census year] is [racial category]?
+How did the percentage of [racial category] Californians change between the 2010 and 2020 census?
+Did the ordering of racial categories by prevalence change between the 2010 and the 2020 census?
+Are there more [racial category 1] or [racial category 2] Californians in [census year]?
+The title must be "Race in California: Comparison of Percent of Population in 2010 and 2020"
+The data source must not be changed
+Based on the principles outlined in Introduction to Data Science ch.11(https://rafalab.dfci.harvard.edu/dsbook-part-1/dataviz/dataviz-principles.html), do whatever you need to do to improve the visualization. Modification can include changing the type of chart, changing labels or text, changing visual parameters (color, shapes, etc.), making the chart interactive, etc.
+Model Visualization (you should improve this):
+
+Race in California: Comparison of Percent of Population in 2010 and 2020
+
+For Visualization 3 (and only Visualization 3), you should also prepare and submit a document that briefly explains the changes you made to the visualization. It if sufficient to provide a list of bullets of the general format, "Based on [visualization principle], I changed [describe the change to the visualization], so that the viewer [describe how this improves the viewer's experience or helps meet the visualization goal]." Feel free to provide additional context or description as well.
+
+Assignment Submission
+You should submit:
+
+Your Vega-Lite specifications as one or more file(s) or pasted text. Submit just the specifications, not full HTML files.
+Your document that explains the changes in Visualization 3.
+We will copy each specification exactly as you have submitted it into the Vega-Lite online editor(https://vega.github.io/editor/#/) to view and grade your submission. It is recommended that if you develop your visualizations locally that you test your specifications in the online editor before submitting. Visualizations that do not compile in the online editor will not be graded.
+
+Grading
+Grading for Visualizations 1 & 2 will be based on how closely you follow the requirements and match the model visualization.
+
+Grading for Visualization 3 will be based on whether the visualization follows the requirements and how well the visualization communicates to the viewer (the user experience). This will include (but not be limited to):
+
+Can the viewer visually compare category percentages easily and accurately between 2010 and 2020 data?
+Can the viewer determine the actual values of each category?
+Does the visualization lead the viewer to draw incorrect or distorted conclusions?
+Is the presentation of data sensible and pleasing?
+Rubric
+Visualization Assignment
+Visualization Assignment
+Criteria	Ratings	Pts
+This criterion is linked to a Learning OutcomeMeets Assignment Requirements
+Provides code for 3 Vega-Lite visualizations. Code compiles in the Vega-Lite online editor.
+10 pts
+This criterion is linked to a Learning OutcomeVisualization #1: Hourly Weather Data
+30 pts
+This criterion is linked to a Learning OutcomeVisualization #2: UFO Sightings
+30 pts
+This criterion is linked to a Learning OutcomeVisualization #3: Census Race Data
+30 pts
+Total Points: 100

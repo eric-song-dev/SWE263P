@@ -4,7 +4,7 @@ Target length: about 5 to 6 minutes at a natural pace.
 
 ## Slide 1 - Title
 
-Hi everyone. Today I am presenting a heuristic evaluation of Canvas, focusing on the student side.
+Hi everyone. I'm Zhenyu Song. Today I am presenting a heuristic evaluation of Canvas, focusing on the student side.
 
 I looked at common tasks: finding assignments, checking due dates, reading announcements, viewing grades, using the calendar, and moving around course pages.
 
@@ -26,7 +26,7 @@ The first heuristic is visibility of system status. In simple words, the system 
 
 Canvas does this well in several places. The To Do list shows upcoming work. Assignments show due dates. The Grades page shows the total grade and assignment weights.
 
-But some details are harder to read. On the left, the orange box shows a To Do item where the assignment name is cut off. On the grade panel, the green box shows that the total grade is visible.
+The green box on the grade panel is a strength: it shows the total grade clearly. But the orange box shows a To Do item where the assignment name is cut off.
 
 So Canvas has useful status cues, but some meaning is easy to miss. My recommendation is to label icon-only states and show full names for important To Do items.
 
@@ -62,7 +62,7 @@ My recommendation is to make urgent coursework stand out more, offer a denser li
 
 ## Slide 8 - Prioritized Recommendations
 
-I would prioritize four changes.
+So I would prioritize four changes.
 
 First, label status icons, such as comments, hidden scores, unread markers, and course-card shortcuts.
 
