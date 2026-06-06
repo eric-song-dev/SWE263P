@@ -1,0 +1,203 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": {
+    "text": "Race in California: Comparison of Percent of Population in 2010 and 2020",
+    "anchor": "start",
+    "fontSize": 20
+  },
+  "width": 1000,
+  "height": 600,
+  "data": {
+    "url": "https://raw.githubusercontent.com/mbietz/datasets/main/census_race.csv"
+  },
+  "transform": [
+    {
+      "fold": [
+        "yr2010",
+        "yr2020"
+      ],
+      "as": [
+        "yearField",
+        "population"
+      ]
+    },
+    {
+      "calculate": "datum.yearField == 'yr2010' ? '2010' : '2020'",
+      "as": "Census Year"
+    },
+    {
+      "joinaggregate": [
+        {
+          "op": "sum",
+          "field": "population",
+          "as": "yearTotal"
+        }
+      ],
+      "groupby": [
+        "Census Year"
+      ]
+    },
+    {
+      "calculate": "datum.population / datum.yearTotal",
+      "as": "Percent of Population"
+    },
+    {
+      "calculate": "datum.yearField == 'yr2020' ? datum.population / datum.yearTotal : null",
+      "as": "sortPercent2020"
+    },
+    {
+      "joinaggregate": [
+        {
+          "op": "max",
+          "field": "sortPercent2020",
+          "as": "Sort by 2020 Percent"
+        }
+      ],
+      "groupby": [
+        "race"
+      ]
+    }
+  ],
+  "layer": [
+    {
+      "mark": {
+        "type": "line",
+        "stroke": "#9aa0a6",
+        "strokeWidth": 2
+      },
+      "encoding": {
+        "x": {
+          "field": "Percent of Population",
+          "type": "quantitative",
+          "title": "Percent of California Population",
+          "axis": {
+            "format": ".0%",
+            "grid": true
+          },
+          "scale": {
+            "domain": [
+              0,
+              0.45
+            ],
+            "zero": true
+          }
+        },
+        "y": {
+          "field": "race",
+          "type": "nominal",
+          "title": "Race / Ethnicity",
+          "axis": {
+            "labelLimit": 360
+          },
+          "sort": {
+            "field": "Sort by 2020 Percent",
+            "op": "max",
+            "order": "descending"
+          }
+        },
+        "detail": {
+          "field": "race",
+          "type": "nominal"
+        }
+      }
+    },
+    {
+      "mark": {
+        "type": "point",
+        "filled": true,
+        "size": 120,
+        "stroke": "white",
+        "strokeWidth": 1
+      },
+      "encoding": {
+        "x": {
+          "field": "Percent of Population",
+          "type": "quantitative",
+          "title": "Percent of California Population",
+          "axis": {
+            "format": ".0%"
+          },
+          "scale": {
+            "domain": [
+              0,
+              0.45
+            ],
+            "zero": true
+          }
+        },
+        "y": {
+          "field": "race",
+          "type": "nominal",
+          "title": "Race / Ethnicity",
+          "axis": {
+            "labelLimit": 360
+          },
+          "sort": {
+            "field": "Sort by 2020 Percent",
+            "op": "max",
+            "order": "descending"
+          }
+        },
+        "color": {
+          "field": "Census Year",
+          "type": "nominal",
+          "title": "Census Year",
+          "scale": {
+            "domain": [
+              "2010",
+              "2020"
+            ],
+            "range": [
+              "#4c78a8",
+              "#f58518"
+            ]
+          }
+        },
+        "tooltip": [
+          {
+            "field": "race",
+            "type": "nominal",
+            "title": "Race / Ethnicity"
+          },
+          {
+            "field": "Census Year",
+            "type": "nominal",
+            "title": "Census Year"
+          },
+          {
+            "field": "Percent of Population",
+            "type": "quantitative",
+            "title": "Percent of Population",
+            "format": ".2%"
+          },
+          {
+            "field": "population",
+            "type": "quantitative",
+            "title": "Population",
+            "format": ","
+          }
+        ]
+      }
+    }
+  ],
+  "resolve": {
+    "scale": {
+      "x": "shared",
+      "y": "shared",
+      "color": "shared"
+    }
+  },
+  "config": {
+    "axis": {
+      "labelFontSize": 12,
+      "titleFontSize": 13
+    },
+    "legend": {
+      "labelFontSize": 12,
+      "titleFontSize": 13
+    },
+    "view": {
+      "stroke": null
+    }
+  }
+}

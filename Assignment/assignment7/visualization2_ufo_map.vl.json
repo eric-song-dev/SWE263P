@@ -1,0 +1,155 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": {
+    "text": "Map of US UFO Sightings by Decade",
+    "anchor": "start",
+    "fontSize": 20
+  },
+  "width": 1000,
+  "height": 600,
+  "params": [
+    {
+      "name": "selectedDecade",
+      "value": 1990,
+      "bind": {
+        "input": "range",
+        "min": 1950,
+        "max": 2010,
+        "step": 10,
+        "name": "Decade: "
+      }
+    }
+  ],
+  "vconcat": [
+    {
+      "width": 1000,
+      "height": 28,
+      "data": {
+        "values": [
+          {
+            "label": "Selected decade"
+          }
+        ]
+      },
+      "transform": [
+        {
+          "calculate": "'Showing sightings from the ' + selectedDecade + 's'",
+          "as": "selectedDecadeLabel"
+        }
+      ],
+      "mark": {
+        "type": "text",
+        "align": "left",
+        "baseline": "top",
+        "fontSize": 15,
+        "fontWeight": "normal",
+        "color": "#444"
+      },
+      "encoding": {
+        "x": {
+          "value": 0
+        },
+        "y": {
+          "value": 0
+        },
+        "text": {
+          "field": "selectedDecadeLabel",
+          "type": "nominal"
+        }
+      }
+    },
+    {
+      "width": 1000,
+      "height": 560,
+      "projection": {
+        "type": "albersUsa"
+      },
+      "layer": [
+        {
+          "data": {
+            "url": "https://vega.github.io/vega-datasets/data/us-10m.json",
+            "format": {
+              "type": "topojson",
+              "feature": "states"
+            }
+          },
+          "mark": {
+            "type": "geoshape",
+            "fill": "#e9ecef",
+            "stroke": "#ffffff",
+            "strokeWidth": 0.8
+          }
+        },
+        {
+          "data": {
+            "url": "https://raw.githubusercontent.com/mbietz/datasets/main/ufo-short.csv"
+          },
+          "transform": [
+            {
+              "filter": "datum.country == 'us'"
+            },
+            {
+              "calculate": "floor(year(toDate(datum.date)) / 10) * 10",
+              "as": "decade"
+            },
+            {
+              "filter": "datum.decade == selectedDecade"
+            }
+          ],
+          "mark": {
+            "type": "circle",
+            "filled": true,
+            "size": 45,
+            "color": "#f05a28",
+            "opacity": 0.75,
+            "stroke": "#7f1d1d",
+            "strokeWidth": 0.6
+          },
+          "encoding": {
+            "longitude": {
+              "field": "longitude",
+              "type": "quantitative"
+            },
+            "latitude": {
+              "field": "latitude",
+              "type": "quantitative"
+            },
+            "tooltip": [
+              {
+                "field": "city",
+                "type": "nominal",
+                "title": "City"
+              },
+              {
+                "field": "date",
+                "type": "temporal",
+                "title": "Date",
+                "format": "%B %-d, %Y"
+              },
+              {
+                "field": "shape",
+                "type": "nominal",
+                "title": "Shape"
+              },
+              {
+                "field": "duration",
+                "type": "nominal",
+                "title": "Duration"
+              },
+              {
+                "field": "description",
+                "type": "nominal",
+                "title": "Description"
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "config": {
+    "view": {
+      "stroke": null
+    }
+  }
+}

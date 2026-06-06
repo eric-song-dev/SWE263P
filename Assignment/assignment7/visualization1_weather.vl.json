@@ -1,0 +1,106 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": {
+    "text": "7-Day Hourly Forecast for Irvine, California",
+    "anchor": "start",
+    "fontSize": 20
+  },
+  "width": 1000,
+  "height": 600,
+  "data": {
+    "url": "https://api.weather.gov/gridpoints/SGX/39,59/forecast/hourly",
+    "format": {
+      "type": "json",
+      "property": "properties.periods"
+    }
+  },
+  "transform": [
+    {
+      "calculate": "timeFormat(toDate(datum.startTime), '%A')",
+      "as": "Day of Week"
+    },
+    {
+      "calculate": "datum.probabilityOfPrecipitation.value",
+      "as": "Precipitation Probability"
+    },
+    {
+      "calculate": "datum.relativeHumidity.value",
+      "as": "Humidity"
+    }
+  ],
+  "mark": {
+    "type": "bar",
+    "tooltip": true
+  },
+  "encoding": {
+    "x": {
+      "field": "startTime",
+      "type": "temporal",
+      "title": "Forecast Time",
+      "axis": {
+        "format": "%-I %p",
+        "labelAngle": -45,
+        "labelOverlap": true,
+        "tickCount": 28
+      }
+    },
+    "y": {
+      "field": "temperature",
+      "type": "quantitative",
+      "title": "Temperature (F)",
+      "scale": {
+        "domain": [
+          50,
+          80
+        ],
+        "zero": false
+      }
+    },
+    "color": {
+      "field": "Day of Week",
+      "type": "nominal",
+      "title": "Day of Week"
+    },
+    "tooltip": [
+      {
+        "field": "startTime",
+        "type": "temporal",
+        "title": "Date and Time",
+        "format": "%A, %B %-d, %Y, %-I %p"
+      },
+      {
+        "field": "temperature",
+        "type": "quantitative",
+        "title": "Temperature (F)"
+      },
+      {
+        "field": "windSpeed",
+        "type": "nominal",
+        "title": "Wind Speed"
+      },
+      {
+        "field": "Precipitation Probability",
+        "type": "quantitative",
+        "title": "Precipitation (%)"
+      },
+      {
+        "field": "Humidity",
+        "type": "quantitative",
+        "title": "Humidity (%)"
+      }
+    ]
+  },
+  "config": {
+    "axis": {
+      "labelFontSize": 11,
+      "titleFontSize": 13
+    },
+    "legend": {
+      "labelFontSize": 12,
+      "titleFontSize": 13
+    },
+    "view": {
+      "stroke": null
+    }
+  }
+}
