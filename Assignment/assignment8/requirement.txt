@@ -1,0 +1,63 @@
+Ethics Review
+Due Tuesday by 11:59pm Points 100 Submitting a file upload File Types pdf Available after Jun 1 at 6pm
+Assignment Overview
+Release Date: June 1, 2026 by 6pm
+Due Date: June 9, 2026, by 11:59pm
+Points: 100
+Submitting: A set of slides as a PDF document
+Your Task: Conduct an ethical review of a technology and document your findings in slide format.
+
+Learning Goals: By the end of this assignment, you will have gained experience with:
+
+conducting an ethical evaluation of an interactive system
+analyzing, synthesizing and prioritizing the results of an ethical evaluation
+communicating the results of an ethical evaluation in slide format
+Introduction
+"Technology is neither good nor bad; nor is it neutral." - Melvin Kranzberg's First Law of Technology
+
+ There are so many stories of ethical missteps in the news in areas like privacy, disinformation, bias, and bad behavior. We know that bad actors exist. We know that intended benefits may give way to unintended harms. As creators of technology, we have a responsibility to address ethical concerns around our products. To address this, a number of "ethics toolkits" have been developed. Take a look at this video overview of ethics toolkitsLinks to an external site. (see the accompanying slides(https://docs.google.com/presentation/d/e/2PACX-1vQfWIIPeOZ1-GnTQqjnXQMiCU7E1-RjCs57nUGjAy9F7__rzDIb33Pttd2jEjBG_gDfODeElGvGhbZ1/pub?slide=id.g272a82f342e_0_0) for clickable links).
+
+For this assignment, you will conduct an ethical review of a software system / information technology. The system you review is up to you, and it can be a system that you yourself have built or been involved with building, or it can be a system that is available in the world. If you choose a system built by someone else, you should imagine that you are a member of the development team when writing up your analysis. In any case, you should choose a system that will give you enough ethics-related material to write about.
+
+Your review will be structured around the Ethical Explorer Pack. The Pack consists of two parts:
+
+Field Guide Ethical_Explorer_Field-Guide.pdf
+: includes an overview of the Pack and suggestions on its use.
+Tech Risk Zone Cards Ethical_Explorer_Tech-Risk-Zones.pdf
+: a set of flashcards that describe and provide discussion prompts for 8 ethical risk zones
+Ethics are not static, and the solutions to ethical dilemmas are not obvious or universal. The Ethical Explorer Pack is meant to generate conversation around potential ethical risks and support collective decision making within design teams. For this assignment, you may complete the analysis on your own, or if you wish, you may conduct your analysis and have discussion with up to 2 classmates. Either way, you must write up your analysis individually and on your own.
+
+Instructions
+To conduct your review, you should do the following:
+
+Download the Field Guide Ethical_Explorer_Field-Guide.pdf and Tech Risk Zone Cards Ethical_Explorer_Tech-Risk-Zones.pdf
+. Familiarize yourself with them.
+For each tech risk zone, consider the description on the first card and each of the questions on the second card (under Where We Stand, Anticipating Risk, and Leading the Way). Your goal is not only to identify ethical concerns but also to strategize ways to reduce the risk or mitigate the potential consequences. Be critical and comprehensive - even if you believe that an ethical harm is unlikely, you should still identify it at this step.
+Once you have listed all of your ethical concerns, go through your list and identify the top 3 that you wish to report.
+You will document your results as a set of presentation slides (created with tools like Powerpoint, Keynote, or Google Slides). For each of your 3 top ethical concerns, you should create one or more slides that describe the concern and potential actions (often multiple actions) that might be taken in response. You only need to document your top 3 concerns.
+A few notes about conducting your analysis:
+Remember that "ethical concerns" and "ethical risk zones" are different.
+Ethical risk zones are general categories (like "Disinformation" and "Surveillance") that can help you identify specific issues.
+Ethical concerns are the specific issues with the system you are analyzing. Ethical concerns would look more like, "Our GenAI might be used to create harmful images like fake nudes of famous people" or "Our sleep data can reveal sensitive information like whether someone is cheating on their spouse." (Don't use these exact examples.)
+When describing each ethical concern, be sure to describe the issue clearly and also indicate for whom this might be an issue (stakeholders), the potential impact(s) of the issue, and how likely and large those impacts might be.
+Remember the format of the Consequence Scanning toolkit (described in the lecture), where actions are sorted into Act, Influence, and Monitor. Not all ethical concerns need to have immediate technological fixes - it is OK to suggest organizational planning, internal policy making, or even "continue to monitor this" as appropriate responses. Just be sure to explain why your suggested actions are the appropriate response.
+A few notes about the format of your document:
+Slides have become a common format for business reports, even if they are never actually presented live. Remember that this deliverable is meant to be read, not presented. Make sure you include enough information on the slides that they can stand on their own.
+Don't forget to have a title slide that also includes your name, date, and contact information (usually email).
+You should also have 1 or more slides that introduce the system you are reviewing. Do not assume that the reader will know the system.
+Submit your slide deck in PDF format as your deliverable for this assignment.
+
+Rubric
+Ethics Review
+Ethics Review
+Criteria	Ratings	Pts
+This criterion is linked to a Learning OutcomeMeets Assignment Requirements
+Submitted a slide presentation including a title slide with header info; Describes the system being analyzed in enough detail to understand what it is; Discusses 3 or more ethical concerns
+30 pts
+This criterion is linked to a Learning OutcomeCritical Analysis
+Important ethical issues have been identified; Potential ethical outcomes have been well described and characterized by level of impact, likelihood of occurrence, and potentially affected stakeholders; Ethical issues are clearly linked to specific aspects of the technology’s design, development, deployment, management, maintenance, etc.; The level of analysis is strong; The ideas are clearly communicated with focus and specificity; The analysis is convincing.
+40 pts
+This criterion is linked to a Learning OutcomeEthical Responses
+Suggested responses to each ethical issue have been identified and well-described; Suggested responses are actionable and appropriate for the issue as described; Rationale for the suggested responses is clear and convincing; Appropriate responders are (explicitly or implicitly) identified (e.g. if the response is a policy change, who is responsible for the policy?); Ideas are clearly communicated with focus and specificity.
+30 pts
+Total Points: 100
